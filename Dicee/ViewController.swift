@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         diceImageView2.image = UIImage(named: diceArray[randomDiceIndex2])
     }
     
-    
+ 
     @IBOutlet weak var diceImageView2: UIImageView!
     @IBOutlet weak var diceImageView1: UIImageView!
     
@@ -46,6 +46,13 @@ class ViewController: UIViewController {
         updateDiceImage()
         
     }
+    
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        // when the motion ended
+        updateDiceImage()
+    }
+    
+    
 
 
     
